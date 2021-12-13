@@ -1,0 +1,28 @@
+Haverá uma integração em uma tela que cadastra usuários com os seguintes dados:
+- Nome, telefone, CPF, CEP, Logradouro, Cidade e Estado.
+
+Nessa tela, além de colocar os dados de usuário, o usuário digitará CEP e trará todos os dados de CEP,
+e ao salvar, ele cria ou edita o usuário com esses dados do CEP.
+
+Construa uma api (em REST ou em GraphQL) que faça gestão de usuários, com os seguintes métodos:
+
+- Recuperar usuário por CPF
+- Listagem de usuários
+- Criar novo usuário
+- Editar usuário
+- Remover usuário
+- Recuperar endereço por CEP (que buscará no endpoint https://viacep.com.br)
+
+Na busca por CEP, temos que cachear para otimizar a consulta, pense a melhor maneira de cachear essa consulta. 
+O armazenamento de cache pode ser ou via banco de dados em uma tabela à parte ou via banco em memória (Redis por exemplo).
+
+Requisitos:
+Utilizar Typescript NodeJS para desenvolver o projeto, de preferência utilizando o framework NestJS
+Utilizar um banco de dados relacional(MySQL ou PostgreSQL)
+Criar testes unitários simulando cenários com sucesso e com falhas
+Criar um Dockerfile para que possa rodar em algum container (ex: kubernetes)
+Criar um README com as instruções para rodar o projeto e os testes unitários
+
+Bônus:
+Aplicar algum design pattern no código
+Colocar validação de token JWT
